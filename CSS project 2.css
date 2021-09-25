@@ -1,0 +1,496 @@
+/* font-family: 'Hind', sans-serif;
+font-family: 'Mukta', sans-serif;
+font-family: 'Rubik', sans-serif; */
+* {
+    box-sizing: border-box;
+}
+html{
+    position: relative;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.chatBox{
+    display: inline-block;
+    padding: 0.5rem;
+    position: sticky;
+    bottom: 0;
+    left: 100%;
+    background-color: rgba(6, 40, 85, 0.9);
+    border: 2px solid rgb(9, 68, 145) ;
+    color: white;
+    font-family: 'Mukta', sans-serif;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+.chaticon {
+    position: absolute;
+    padding: 0.5rem;
+    position: sticky;
+    bottom: 0;
+    left: 100%;
+    /* background-color: cornflowerblue; */
+    display: none;
+}
+
+@media (max-width:640px) {
+    .chatBox {
+        display: none;
+    }
+    .chaticon{
+        display: inline-block;
+    }
+    #phoneNumber {
+        display: none;
+    }
+}
+/* Header & navigation section styles here */
+header > #header {
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid black; */
+    font-family: 'Mukta', sans-serif;
+    background-color: rgba(0,0,0,0.1);
+}
+    .link {
+        text-decoration: none;
+        color: black;
+        padding: 1.5rem;
+    }
+    .item1{
+        font-size: 1.2rem;
+        font-weight: 400;
+        padding: 2rem;
+    }
+    .item3 {
+        padding: 1.5rem;
+        position: relative;
+        left: -2rem;
+        top: 1rem;
+    }
+
+    .item2 {
+        position: relative;
+        left: -10.5rem;
+        top: 1.5rem;
+        font-size: 1.5rem;
+        padding: 2rem;
+        color: #33333c;
+    }
+
+    .item4 {
+        color: #787899;
+        text-decoration: none;
+        position: relative;
+        left: -12rem;
+        top: 2.5rem;
+
+    }
+    .item5 {
+        color: #626267;
+    }
+    .item3 > img {
+        height: 30px;
+    }
+
+    /* Hero creation */
+    #section1 {
+        position: relative;
+    }
+    .background::before {
+        content: " ";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-image: url('https://images.unsplash.com/photo-1599809275671-b5942cabc7a2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1770&q=80');
+        z-index: -1;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .promotionText {
+        position: relative;
+        width: 369px;
+        height: 600px;
+        top: 330px;
+        left: 200px;
+        padding: 2rem;
+        color: rgba(255,255,255,0.9);
+    }
+    .promotionText::after {
+        content: "";   
+        position: absolute;
+        width: 369px;
+        height: 550px;
+        top: 0;
+        left: 0;
+        background-color: rgba(6, 40, 85, 0.61);
+        z-index: -1;
+    }
+    .promotionText > h2 {
+        padding: 6px;
+        font-family: 'Rubik', sans-serif; 
+        word-spacing: 4px;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .promotionText > p {
+        font-family: 'Hind', sans-serif;
+        font-size: 1rem;
+        padding: 10px;
+    }
+    .promotionText > button {
+        background: transparent;
+        color: white;
+        border: 2px solid white;
+        padding: 10px;
+        width: 50%;
+        margin-left: 81px;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+    .promotionText > button:hover {
+        background-color: rgba(255,255,255,0.3);
+    }
+    #phoneNumber {
+        position: absolute;
+        top: 0;
+        right: 200px;
+        background-color: rgba(6, 40, 85, 0.61);
+        padding: 1rem;
+        color: rgba(255,255,255,0.9);
+        font-family: 'Mukta', sans-serif;
+    }
+    #phoneNumber > img {
+        top: 7px;
+        position: relative;
+        left: -5px;
+    }
+    #section2 , #section3{
+        position: relative;
+        top: 250px;
+        width: 100%;
+        height: 100vh;
+    }
+    #section2 > h2{
+        margin-top: 8rem;
+        text-align: center;
+        font-family: 'Rubik', sans-serif; 
+        font-size: 2rem;
+        color: rgba(18, 18, 70, 0.7);
+    }
+    .images {
+        display: flex;
+        justify-content: centre;
+        width: 100vw;
+    }
+    .catalouge{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin: 2rem auto;
+        width: 100%;        
+        align-items: center;
+    }
+    .catalouge>a>img {
+        width: 25rem;
+    }
+    .catalouge>a>img:hover {
+        transform: scale(1.2);
+        z-index:1
+    }
+    .catalouge> p{
+        margin: 0.5rem 1.5rem;
+        font-size: 1rem;
+        color: rgba(56, 56, 59, 0.7);
+        font-family: 'Mukta', sans-serif;
+        text-align: center;
+    }
+    .catalouge > h3 {
+        font-family: 'Rubik', sans-serif; 
+        font-size: 1.5rem;
+        color: rgba(18, 18, 70, 0.7);
+        padding: 0;
+        margin: 2px auto;
+    }
+    .catalouge > h4 {
+        font-family: 'Rubik', sans-serif; 
+        font-size: 1rem;
+        color: rgba(168, 148, 31, 0.603);
+    }
+    .catalouge > button {
+        color: rgba(18, 18, 70, 0.7);
+        width: 30%;
+        margin: auto;
+        text-align: center;
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+
+    /* Section 3 code here */
+
+    #section3 >h2 , #section4 > h2{
+        margin-bottom: 7rem;
+        margin-top: 0;
+        text-align: center;
+        font-family: 'Rubik', sans-serif; 
+        font-size: 2rem;
+        color: rgba(18, 18, 70, 0.7);
+    }
+    #subSection3_1{
+        display: flex;
+        height: 50%;
+        width: 100%;
+        background-color: rgba(6, 40, 85, 0.9);
+        color: white
+    }
+    #subSection3_2 {
+        display: flex;
+        height: 60vh;
+        width: 100%;
+        background-color: rgba(6, 40, 85, 1);
+        color: white
+    }
+
+    .imageSection3, .mageSection3_2  {
+        position: relative;
+    }
+
+    .imageSection3 > img {
+        height: 20rem;
+        width: 18rem;
+        position: absolute;
+        top: -10%;
+        margin-left: 20rem;
+    }
+    .imageSection3_2 > img {
+        height: 20rem;
+        width: 18rem;
+        position: relative;
+        top: 22%;
+        margin-left: 41rem;
+    }
+    .descSection3 {
+        position: relative;
+        left: 45%;
+        top: 0in;
+        height: 20rem ;
+        width: 20rem;
+    }
+    .descSection3_2 {
+        position: relative;
+        left: 45%;
+        top: 0;
+        height: 20rem ;
+        width: 20rem;
+        margin-top: 7rem;
+    }
+    .descSection3>h3 , .descSection3_2>h3 {
+        font-family: 'Rubik', sans-serif; 
+        font-size: 1.5rem;
+        color: rgba(247, 247, 255, 0.815);
+        
+    }
+    .descSection3>h4 , .descSection3_2>h4 {
+        font-family: 'Rubik', sans-serif; 
+        font-size: 1rem;
+        color: rgba(168, 148, 31, 0.603);
+    }
+
+    .descSection3 >.cost, .descSection3_2 >.cost{
+        color: royalblue;
+    }
+    #section3 > p {
+        font-family: 'Mukta', sans-serif;
+    }
+
+    #section4{
+        position: relative;
+        top: 535px;
+        width: 80%;
+        height: 100vh;
+        margin: auto;
+    }
+
+    .images4 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .images4 > span > img {
+        height: 7rem;
+        width: 7rem;
+        position: relative;
+        left: 35%;
+    }
+    
+    .images4 > span > h3 {
+        font-family: 'Rubik', sans-serif; 
+        font-size: 1.2rem;
+        color: rgba(36, 36, 37, 0.815);
+        text-align: center;
+        line-height: 3px;
+        margin: 2rem auto;
+    }
+    .images4 > span > p{
+        font-family: 'Mukta', sans-serif;
+        text-align: center;
+        margin: 3rem;
+    }
+    #section5{
+        position: relative;
+        top: 367px;
+        width: 100%;
+        height: 100vh;
+        margin: auto;
+        background-image: url('./section5Background.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #section5::after{
+        content: " ";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        margin: auto;
+        background-color: rgba(1, 10, 22, 0.6);
+    }
+    #section5 > h2 {
+        position: absolute;
+        top: 10rem;
+        left: 30%;
+        text-align: center;
+        font-family: 'Rubik', sans-serif; 
+        font-size: 3rem;
+        color: rgb(231, 227, 227);
+        z-index: 1;
+    }
+    #testimonials {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        /* align-items: center; */
+    }
+    .testimonials {
+        position: relative;
+        width: 80%;
+        margin: 25% auto;
+        z-index: 1;
+        color: rgb(231, 227, 227);
+        top:50%;
+        left: 20%;
+    }
+    .testimonials > img {
+        height: 2rem;
+        width: 2rem;
+    }
+    .testimonials > p {
+        position: relative;
+        width: 70%;
+        font-family: 'Mukta', sans-serif;
+        text-align: center;
+        font-size: 1.2rem;
+        z-index: 1;
+    }
+    .testimonials > h4 {
+        text-align: center;
+        font-size: 1.3rem;
+        color: rgba(235, 211, 80, 0.712);
+    }
+    #section6{
+        position: relative;
+        top: 443px;
+        width: 100%;
+        height: 100vh;
+        margin: auto;
+    }
+    #section6 > h1 {
+        text-align: center;
+        font-family: 'Rubik', sans-serif; 
+        font-size: 2rem;
+        color: rgba(18, 18, 70, 0.7);
+    }
+    #container {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    #contacts, #contact_form {
+        position: relative;
+        width: 40%;
+        margin: auto;
+    }
+    #contact_form {
+        margin-top: 1%;
+    }
+    #contact_form > input, #contact_form > textarea {
+        margin-top: 1%;
+        padding: 0.5rem;
+        font-size: 1rem;
+        width: 80%;
+        font-family: 'Rubik', sans-serif;
+    }
+    #contact_form > button{
+        position: relative;
+        margin-left: 60%;
+        width: 20%;
+        background-color: rgb(31, 31, 53);
+        color: white;
+        font-size: 1.5rem;
+        cursor: pointer;
+        font-family: 'Rubik', sans-serif;
+    }
+
+    #contact_form > button:hover {
+        background-color: rgba(31, 31, 53, 0.7);
+    }
+
+    #contacts > h2, #contact_form > h2 {
+        font-size: 1.5rem;
+        font-family: 'Mukta', sans-serif;
+        color: rgba(0,0,0,0.8);
+        width: 80%;
+        line-height: 10px;
+    }
+    #contacts> h3 {
+        font-size: 1.2rem;
+        font-family: 'Mukta', sans-serif;
+        color: rgba(0,0,0,0.8);
+    }
+    #contacts> p {
+        font-size: 1rem;
+        font-family: 'Rubik', sans-serif;
+        color: rgba(0,0,0,0.8);
+        line-height: 5px;
+    }
+    #contact_form > h2 {
+        line-height: 24px;
+    }
+    #footer {
+        position: relative;
+        margin-top: 433px;
+        width: 100%;
+        height: 6rem;
+        background-color:rgba(160, 101, 13, 0.712);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    footer > #a1 > img {
+        width: 50px;
+        position: absolute;
+        left: 80%;
+        top: 22%;
+    }
+    footer > #a2 > img {
+        width: 70px;
+        position: absolute;
+        left: 84%;
+        top: 15%;
+    }

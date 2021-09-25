@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Sign Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@600&family=Rubik:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="favicon.png" type="image" />
+    <link rel="stylesheet" href="./CSS project 2.css" />
+    <style>
+          #agents {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 1rem ;
+            width: 80%;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+          }
+          #agents > div {
+            width: 60vh;
+            height: 90vh;
+            margin-top: 3rem;
+          }
+           #agentPage > h2{
+            font-family: 'Rubik', sans-serif;
+            font-size: 2.5rem;
+            text-align: center;
+            width: 100%;
+            color: white;
+            position: relative;
+            margin-top: -0.5rem;
+          }
+          h2 {
+            position: absolute;
+            top: 4rem;
+          }
+          h3{
+            font-family: 'Rubik', sans-serif;
+            font-size: 1.2rem;
+            text-align: center;
+            width: 100%;
+            color: white;
+            margin-top: 2rem;
+          }
+          #agents > div > img {
+            position: relative;
+            width: 90%;
+            margin: 1rem 1.5rem;
+          }
+          h4{
+            font-family: 'Rubik', sans-serif;
+            font-size: 1.2rem;
+            text-align: center;
+            width: 100%;
+            color: burlywood;
+          }
+          button{
+        position: relative;
+        margin-left: 7rem;
+        width: 50%;
+        background-color: rgb(98, 181, 236);
+        color: rgb(36, 34, 34);
+        font-size: 1.5rem;
+        cursor: pointer;
+        font-family: 'Rubik', sans-serif;
+        padding: 0.5rem;
+    }
+
+  button:hover {
+        background-color: rgba(31, 31, 53, 0.7);
+        color: white;
+    }
+    #agentPage {
+      background-color: rgba(10, 10, 99);
+      position: relative;
+      margin-top: 0;
+    }
+    #footer {
+        position: relative;
+        margin-top: 0;
+        width: 100%;
+        height: 6rem;
+        background-color:rgba(160, 101, 13, 0.712);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="header">
+          <a class="link" href="index.html"
+            ><span class="item1">FABER & CO</span>
+            <span class="item2">REAL ESTATE </span>
+          </a>
+          <a href="login.html" class="item3"><img src="login.png" /></a>
+        <a href="login.html" class="item4">Log In</a>
+        <a href="index.html" class="link"><p class="item5">HOME</p></a>
+        <a href="Agents.html" class="link"><p class="item5">AGENTS</p></a>
+        <a href="contact.html" class="link"><p class="item5">CONTACT</p></a>
+        <a href="Agents.html" class="link"><p class="item5">BOOK ONLINE</p></a>
+        </div>
+      </header>
+      <div id="agentPage">
+      <h2>OUR AGENTS</h2>
+      <div id="agents">
+        <div>
+          <img src="https://via.placeholder.com/350">
+          <h3>CHRIS UTAN</h3>
+          <h4>Sales Agent</h4>
+          <button type="submit">Book Now</button>
+        </div>
+        <div>
+          <img src="https://via.placeholder.com/350">
+          <h3>CMARC JONES</h3>
+          <h4>Sales Agent</h4>
+          <button type="submit">Book Now</button>
+        </div>
+        <div>
+          <img src="https://via.placeholder.com/350">
+          <h3>HAYLEY STONE</h3>
+          <h4>Sales Agent</h4>
+          <button type="submit">Book Now</button>
+        </div>
+        <div>
+          <img src="https://via.placeholder.com/350">
+          <h3>DUANE SAUNDERS</h3>
+          <h4>Rental Agent</h4>
+          <button type="submit">Book Now</button>
+        </div>
+        <div>
+          <img src="https://via.placeholder.com/350">
+          <h3>ALEXA JOHNSON</h3>
+          <h4>Rental Agent</h4>
+          <button type="submit">Book Now</button>
+        </div>
+        <div>
+          <img src="https://via.placeholder.com/350">
+          <h3>LISA TURNER</h3>
+          <h4>Rental Agent</h4>
+          <button type="submit">Book Now</button>
+        </div>
+      </div></div>
+      <footer id="footer">
+        <p>&copy 2023 by Faber & Co Real Estate. Proudly created with Wix.com</p>
+        <a id="a1" href="https:\\www.facebook.com" target="_blank">
+          <img src="facebook.png" alt="Facebook"
+        /></a>
+        <a id="a2" href="https:\\www.twitter.com" target="_blank">
+          <img src="twitter.png" alt="Twitter"
+        /></a>
+      </footer>
+</body>
+<a href="#" class="chatBox">CHAT WITH US</a>
+</html>

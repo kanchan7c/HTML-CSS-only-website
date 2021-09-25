@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Sign Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@600&family=Rubik:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="favicon.png" type="image" />
+    <link rel="stylesheet" href="./CSS project 2.css" />
+    <style>
+        .login {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+        }
+        .login > h2 {
+                font-size: 4rem;
+                font-family: 'Mukta', sans-serif;
+        }
+        .login > span {
+            font-size: 1.5rem;
+            position: absolute;
+            margin-top: 1%;
+            font-family: 'Mukta', sans-serif;
+        }
+        .login > a {
+            text-decoration: none;
+            font-size: 1.2rem;
+            position: absolute;
+            margin-top: 1%;
+            margin-left: 17rem;
+            font-family: 'Mukta', sans-serif;
+        }
+        .login> input {
+        padding: 0.5rem;
+        font-size: 1rem;
+        width: 30%;
+        font-family: 'Mukta', sans-serif;
+    }
+    .login > button{
+        width: 20%;
+        background-color: rgb(31, 31, 53);
+        color: white;
+        font-size: 1.5rem;
+        cursor: pointer;
+        font-family: 'Rubik', sans-serif;
+        padding: 0.5rem;
+    }
+    .login > button:hover {
+        background-color: rgba(31, 31, 53, 0.7);
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="header">
+          <a class="link" href="index.html"
+            ><span class="item1">FABER & CO</span>
+            <span class="item2">REAL ESTATE </span>
+          </a>
+          <a href="login.html" class="item3"><img src="login.png" /></a>
+        <a href="login.html" class="item4">Log In</a>
+        <a href="index.html" class="link"><p class="item5">HOME</p></a>
+        <a href="Agents.html" class="link"><p class="item5">AGENTS</p></a>
+        <a href="contact.html" class="link"><p class="item5">CONTACT</p></a>
+        <a href="Agents.html" class="link"><p class="item5">BOOK ONLINE</p></a>
+        </div>
+      </header>
+      <div class="login">
+          <h2>Sign Up</h2>
+          <span>Already a member?</span><a href="">Log In</a><br>
+          <input type="email" placeholder="Email"><br>
+          <input type="password" placeholder="Password"><br>
+          <button type="submit">Submit</button>
+      </div>
+      <footer id="footer">
+        <p>&copy 2023 by Faber & Co Real Estate. Proudly created with Wix.com</p>
+        <a id="a1" href="https:\\www.facebook.com" target="_blank">
+          <img src="facebook.png" alt="Facebook"
+        /></a>
+        <a id="a2" href="https:\\www.twitter.com" target="_blank">
+          <img src="twitter.png" alt="Twitter"
+        /></a>
+      </footer>
+</body>
+<a href="#" class="chatBox">CHAT WITH US</a>
+</html>
